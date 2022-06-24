@@ -41,3 +41,4 @@ jobs:
           username: root
           script: |
             ls
+            cat docker-compose.yml
