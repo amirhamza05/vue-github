@@ -41,6 +41,7 @@ jobs:
           username: root
           script: |
             ls
-            git clone https://github.com/amirhamza05/vue-github
+            [ ! -d 'vue-github' ] && git clone https://github.com/amirhamza05/vue-github
+            #git clone https://github.com/amirhamza05/vue-github
             cd vue-github
             bash deploy.sh
