@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12 p-2">
                 <input type="text" class="border p-2" v-model="handle">
-                <button class="btn btn-danger ml-2" @click="searchUserInfo()">Search Github User Profile</button>
+                <button class="btn btn-danger ml-2" @click="searchUserInfo()">Search Github Profile</button>
             </div>
             <div class="col-md-6 p-3 border">
                 <User :user="user" />
