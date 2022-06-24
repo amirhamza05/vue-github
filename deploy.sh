@@ -1,5 +1,7 @@
 echo "deploying===========================";
 
+git pull origin main
+
 echo '============================ Build Docker Compose File ===========================';
 docker-compose build
 

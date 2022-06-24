@@ -40,10 +40,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }} 
           username: ${{ secrets.USERNAME }}
           script: |
-            ls
             if [ ! -d "vue-github" ] ; then
               git clone https://github.com/amirhamza05/vue-github
             fi
             cd vue-github
-            git pull
             bash deploy.sh
