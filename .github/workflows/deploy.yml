@@ -45,4 +45,5 @@ jobs:
               git clone https://github.com/amirhamza05/vue-github
             fi
             cd vue-github
+            git pull
             bash deploy.sh
