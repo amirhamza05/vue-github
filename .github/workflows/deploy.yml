@@ -36,14 +36,13 @@ jobs:
       - name: Install SSH Key
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: 143.244.131.67
+          host: ${{ secrets.HOST }} 
           key: ${{ secrets.SSH_PRIVATE_KEY }} 
-          username: root
+          username: ${{ secrets.USERNAME }}
           script: |
             ls
             if [ ! -d "vue-github" ] ; then
               git clone https://github.com/amirhamza05/vue-github
             fi
-            #git clone https://github.com/amirhamza05/vue-github
             cd vue-github
             bash deploy.sh
