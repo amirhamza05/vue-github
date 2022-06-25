@@ -1,4 +1,4 @@
-name: CI/CD Practice
+name: Deploy Vue Github
 
 # Controls when the workflow will run
 on:
